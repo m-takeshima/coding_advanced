@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/base.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    <div id="wrap">
+<div style="background-color: #FFEFD5;">
+<!-- ヘッダー -->
+    <header>
+        <div class="d-none d-md-block">
+        <nav class="navbar navbar-expand-md sticky-top" style="background-color:lightgray; height:50px; width: 100%">
+        <div class="fs-1 col-md-auto me-md-auto justify-content-center ms-5">
+            Casteria</div>
+            <div class="navbar"></div>
+       <ul class="nav col-md-auto ms-md-auto justify-content-center ms-1 offset-1">
+            <li><a href="#" class="nav-link px-2 text-dark">Home</a></li>
+            <li><a href="#" class="nav-link px-2 text-secondary">Food</a></li>
+            <li><a href="#" class="nav-link px-2 text-secondary">Drink</a></li>
+            <li><a href="#" class="nav-link px-2 text-secondary">お問合せ</a></li>
+        </ul>
+        <div>
+<!-- フォーム -->
+        <div class="input-group ms-1 me-5">
+            <div class="col-auto">
+                <input type="search" class="form-control" placeholder="Search" aria-label="search" aria-describedby="input-group-button-right">
+                </div>
+                <button type="button" class="btn btn-light" style="background-color:whitesmoke;" id="input-group-button-right">Search</button>
+            </div>
+        </div>
+        </nav>
+         </div>
+
+<!--スマホ用ヘッダー-->
+         <div class="d-sm-block d-md-none d-lg-none">
+         <div style="background-color: #FFEFD5;">
+            <!-- ヘッダー -->
+            <header>
+                <nav class="navbar navbar-expand-md navbar-light sticky-top" style="background-color:lightgray;">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Casteria</a>
+                        <button class="navbar-toggler color: #FFEFD5;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Food</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Drink</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">お問合せ</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-secondary" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        </div>
+    </div>
+<!--スマホ用ヘッダー-->
+    </header>
+<!-- スライダー -->
+<div class="swiperContainer">
+    <div class="swiper">
+        <div class="swiper-wrapper col-sm-12 col-md-12">
+            <div class="swiper-slide">
+                <img src="./img/restaurant.jpg" alt="Restaurant">
+            </div>
+            <div class="swiper-slide col-sm-4">
+                <img src="./img/food.jpg" alt="Food">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/food2.jpg" alt="Food2">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/interior.jpg" alt="Interor">
+            </div>
+        </div>
+            <div class="swiper-pagination">
+            </div>
+            <!-- ナビボタン -->
+            <div class="swiper-button-prev">
+            </div>
+            <div class="swiper-button-next">
+            </div>
+    </div>
+      <!-- スクロールバー -->
+      <div class="swiper-scrollbar">
+    </div>
+</div>
+<!-- メイン -->
+
+<!-- インフォメーション -->
+   
+<div class= "container">
+    <div class="justify-content-center" >
+        <div class="text-start">
+        <div class="h1 mt-2 justify-content-center ">
+            新型コロナウイルスに対する取り組みの最新情報をご案内</ul>
+        </div>
+    </div>
+
+        <!-- アコーディオンメニュー -->
+
+        <dl id="acMenu" class="justify-content-center">
+        <dt class=" h2 justify-content-center" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-square-fill rounded-1" viewBox="0 0 16 16">
+                <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+              </svg>衛生面に関して</dt>
+        <dd class="info">
+            <ul>
+                <li>マスクを着用しての接客</li>
+                <li>出勤前の検温の徹底</li>
+            </ul>
+        </dd>
+
+            <dt class="h2 justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-square-fill rounded-1" viewBox="0 0 16 16">
+                <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+              </svg>お客様へのご協力のお願い</dt>
+            <dd class="info">
+                <ul>
+                    <li>店内では、飲食以外のマスク着用をお願いいたします</li>
+                    <li>入店時の手指の消毒にご協力ください</li>
+                    <li>レジに並ぶ際、目安を示すフロアステッカーに沿った列間隔の確保にご協力ください</li>
+                    <li>多数でのお越しの際は、お一人がまとめてご注文願います（混雑時に入場制限をする場合がございます）</li>
+                    <li>発熱や体調不良の際は入店をお控えください</li>
+                </ul>
+            </dd>
+
+            <dt class="h2 justify-content-center "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-square-fill rounded-1" viewBox="0 0 16 16">
+                <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+              </svg>サービスに関して</dt>
+            <dd class="info">
+                <ul>
+                    <li>直接お渡しする商品の提供、金銭授受時にグローブの着用</li>
+                    <li>地域活動・イベントの中止</li>
+                    <li>混雑時間帯の客席の譲り合いのご協力お願いの実施</li>
+                    <li>店内設置しているミルク、はちみつ、パウダー類一時引き下げ</li>
+                    <li>混雑状況に応じたドライブスルーサービスの一時休止や店内客席利用の制限</li>
+                </ul>
+            </dd>
+        </dl>
+    </div>
+</div>
+
+
+<!-- フェードメニュー -->
+
+<div style="margin-top: 80px;"></div> 
+<div class="container">
+    <div class="row">
+        <div class="fadein">
+            <div class="d-flex justify-content-start col-sm-12 col-md-12 mt-2 text-sm-start">
+                <p class="h3">Signature Food</p>
+            </div>
+            <div class="d-flex d--sm-flex flex-column flex-md-row">
+                <div class="col-sm-12 col-md-6 mt-2"><img src="./img/food.jpg" alt="食材" class="img-fluid" style="width: 120%;">
+                </div>
+                <div class="ol-sm-12 col-md-6 mt-4 ms-4 h5 ">
+                    <p>サーモンは刺身やカルパッチョで食べるのが美味しいですが、リッチな気分になれるサーモンステーキがおすすめです。サーモンの美味しさを引き立てる2種のソースも絶品です！<p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="margin-top: 40px;"></div> 
+<div class="container">
+    <div class="row">
+        <div class="fadein">
+            <div class="d-flex justify-content-start col-sm-12 col-md-12 mt-2 text-sm-start">
+                <p class="h3">Our Coffee</p>
+            </div>
+            <div class="d-flex d--sm-flex flex-column flex-md-row">
+                <div class="col-sm-12 col-md-6 mt-2"><img src="./img/barista.jpg" alt="食材" class="img-fluid" style="width: 100%;">
+                </div>
+                <div class="ol-sm-12 col-md-6 mt-4 ms-4 h5 ">
+                    <p>当店のコーヒー豆は厳選して世界中から買い付けています。そして、そのコーヒー豆のおいしさを最大限に引き出すために自社のロースタリーで焙煎しています。<p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="margin-top: 40px;"></div> 
+<div class="container">
+    <div class="row">
+        <div class="fadein">
+            <div class="d-flex justify-content-start col-sm-12 col-md-12 mt-2 text-sm-start">
+                <p class="h3">Our Food</p>
+            </div>
+            <div class="d-flex d--sm-flex flex-column flex-md-row">
+                <div class="col-sm-12 col-md-6 mt-2"><img src="./img/food3.jpg" alt="食材" class="img-fluid">
+                </div>
+                <div class="ol-sm-12 col-md-6 mt-4 ms-4 h5 ">
+                    <p>当店は何よりまずは衛生管理に気をつけています。「安心・安全」をお届けするために日々継続的な努力を惜しみません。<p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="margin-top: 40px;"></div> 
+<div class="container">
+    <div class="fadein">
+        <div class="d-flex justify-content-center bg-black text-white">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 mt-4 ms-3">
+                    <p class="h3 ms-3">Address</p>
+                    <p>681 xxxx Drive, xxxxx xxxx #01 - 06 0000000<p>
+                    <p>Opening Hours</p>
+                    <p class="h3 ms-3" >Mondays - Friday: 10am - 9pm</p>
+                    <p>Saturdays,Sundays & Public Holidays: 9am - 9pm</p>
+                </div>
+                <div class="col-sm-12 col-md-5 mt-4 mb-4">
+                    <img src="./img/barista.jpg" alt="コーヒー" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="d-none d-md-block d-lg-block">
+    <div style="margin-top: 40px; margin-bottom: 40px;"></div>
+    <div class="container">
+        <div class="row">
+            <div class="fadein">
+                <div class="d-flex justify-content-center">
+                    <p class="h4">店舗一覧</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 col-md-2 d-flex flex-column align-items-center mb-4">
+                        <div class="fixed-ratio-container">
+                            <img src="./img/restaurant2.jpg" class="fixed-ratio-image">
+                        </div>
+                        <p class="text-center mt-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                        </svg>
+                        東京都渋谷区xxxxx xxxxx
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-md-2 d-flex flex-column align-items-center mb-4">
+                        <div class="fixed-ratio-container">
+                            <img src="./img/restaurant3.jpg" class="fixed-ratio-image">
+                        </div>
+                        <p class="text-center mt-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                        </svg>
+                        千葉県松戸市xxxxx xxxxx
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-md-2 d-flex flex-column align-items-center mb-4">
+                        <div class="fixed-ratio-container">
+                            <img src="./img/restaurant4.jpg" class="fixed-ratio-image">
+                        </div>
+                        <p class="text-center mt-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                        </svg>
+                        神奈川県横浜市xxxxx xxxxx
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-md-2 d-flex flex-column align-items-center mb-4">
+                        <div class="fixed-ratio-container">
+                            <img src="./img/restaurant5.jpg" class="fixed-ratio-image">
+                        </div>
+                        <p class="text-center mt-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                        </svg>
+                        埼玉県川越市xxxxx xxxxx
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- フェードメニュー -->
+<!-- フッター -->
+<div style="margin-top: 80px;"></div> 
+<div class="d-flex justify-content-center align-items-center" style="background-color:darkgray; height:90px; width: 100%">
+    <div class="container">
+        <div class="row">
+            <ul class="nav justify-content-center">
+                <li><a href="#" class="nav-link px-2 text-dark">プライバシーポリシー</a></li>
+                <li><a href="#" class="nav-link px-2 text-dark">お問合せ</a></li>
+                <li><a href="#" class="nav-link px-2 text-dark">運営会社</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./js/script.js" defer></script>
+</body>
+</html>
